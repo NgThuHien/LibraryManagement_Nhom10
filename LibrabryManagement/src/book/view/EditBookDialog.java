@@ -172,7 +172,7 @@ public class EditBookDialog extends JDialog {
 			BookModel.updateBook(book);
 			BookView.removeRowSelect();
 			BookView.insertRow(row);
-			BookView.updateList();
+			BookView.updateList(book);
 			JOptionPane.showMessageDialog(this, "Sửa sách thành công.");
 			this.dispose();
 		}
