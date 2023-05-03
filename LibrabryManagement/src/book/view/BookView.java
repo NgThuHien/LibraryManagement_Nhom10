@@ -319,8 +319,9 @@ public class BookView extends JFrame {
 		tableModel.fireTableDataChanged();
 	}
 	
-	public static void updateList() {
-		listBook = BookModel.getAllBook();
+	public static void updateList(BookModel b) {
+		listBook.remove(selectedIndex);
+		listBook.add(selectedIndex, b);
 	}
 	
 	
